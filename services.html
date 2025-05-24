@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Triple Vision Marketing - Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .logo-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #00bfa6;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00bfa6;
+    }
+    main {
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      color: #00bfa6;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .service-card {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+    .service-icon {
+      font-size: 2.5rem;
+      color: #00bfa6;
+      margin-bottom: 1rem;
+    }
+    .service-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .service-desc {
+      font-size: 1rem;
+      line-height: 1.4;
+      color: #555;
+    }
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 1.5rem 2rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+    footer .footer-nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    footer .footer-nav a:hover {
+      color: #00bfa6;
+    }
+    footer .social-icons a {
+      color: #ccc;
+      margin: 0 8px;
+      font-size: 1.4rem;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    footer .social-icons a:hover {
+      color: #00bfa6;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      footer .footer-nav,
+      footer .social-icons {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      Triple Vision
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Services</h1>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+        <div class="service-title">Digital Marketing Strategy</div>
+        <div class="service-desc">
+          Creating customized marketing plans to boost your business.
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-share-alt"></i></div>
+        <div class="service-title">Social Media Management</div>
+        <div class="service-desc">
+          Managing your social channels to grow your audience and engagement.
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-search"></i></div>
+        <div class="service-title">SEO Optimization</div>
+        <div class="service-desc">
+          Improving your website ranking to increase organic traffic.
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+        <div class="service-title">Content Creation</div>
+        <div class="service-desc">
+          Producing quality content that speaks to your customers.
+        </div>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+        <div class="service-title">PPC Advertising</div>
+        <div class="service-desc">
+          Managing paid ads campaigns to maximize ROI.
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/triplevisionagency" target="_blank" rel="noopener">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/triplevisionagency" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+    <div>&copy; 2025 Triple Vision Marketing. All rights reserved.</div>
+  </footer>
+</body>
+</html>

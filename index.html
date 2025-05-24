@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Triple Vision Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- إضافة FontAwesome لأيكونات السوشيال -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pV5H3D1Ph3kx9NTq8qf72JoxS5J/IvXylszqwVZ3joJ3lO+3l3qPzYVpZxXrJKnjy8vFF/j11XY6p8l+e6xj7qQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
+    }
+
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .logo-icon {
+      width: 30px;
+      height: 30px;
+      background-color: #00bfa6;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bfa6;
+    }
+
+    .hero {
+      background-color: #111;
+      background-image: url('https://via.placeholder.com/1200x500');
+      background-size: cover;
+      background-position: center;
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp:hover {
+      background-color: #1da851;
+    }
+
+    .gallery {
+      padding: 3rem 2rem;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .gallery h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+      aspect-ratio: 4 / 3;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2.5rem 2rem; /* زودت البادينج */
+      margin-top: 3rem;
+      font-size: 1rem; /* حجم الخط أكبر */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      min-height: 80px; /* ارتفاع أدنى للـ footer */
+    }
+
+    footer .footer-nav a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    footer .footer-nav a:hover {
+      color: #00bfa6;
+    }
+
+    footer .social-icons a {
+      color: #ccc;
+      margin: 0 8px;
+      font-size: 1.4rem; /* كبر حجم الايكونات شوية */
+      transition: color 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+    }
+
+    footer .social-icons a:hover {
+      color: #00bfa6;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      footer .footer-nav,
+      footer .social-icons {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <div class="logo-icon"></div>
+      Triple Vision
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>We’re different because we get it</h1>
+    <p>
+      A good partner needs to understand your business to be effective. You
+      need a digital marketing partner to watch your back when your focus is
+      elsewhere.
+    </p>
+    <a
+      class="whatsapp"
+      href="https://wa.me/201098324080"
+      target="_blank"
+      rel="noopener"
+      >Talk on WhatsApp</a
+    >
+  </section>
+
+  <section class="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery-grid">
+      <img src="images/image1.jpg" alt="Work Image 1" />
+      <img src="images/image2.jpg" alt="Work Image 2" />
+      <img src="images/image3.jpg" alt="Work Image 3" />
+      <img src="images/image4.jpg" alt="Work Image 4" />
+      <img src="images/image5.jpg" alt="Work Image 5" />
+      <img src="images/image6.jpg" alt="Work Image 6" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Services</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/triplevisionagency" target="_blank" rel="noopener">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+          alt="Facebook"
+          style="width:24px; height:24px"
+        />
+      </a>
+      <a href="https://www.instagram.com/triplevisionagency" target="_blank" rel="noopener">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+          alt="Instagram"
+          style="width:24px; height:24px"
+        />
+      </a>
+    </div>
+    <div>&copy; 2025 Triple Vision Marketing. All rights reserved.</div>
+  </footer>
+</body>
+
+</html>
