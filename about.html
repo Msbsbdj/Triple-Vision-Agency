@@ -15,12 +15,12 @@
     body {
       margin: 0;
       font-family: 'Outfit', sans-serif;
-      background-color: #f8f9fa;
-      color: #222;
+      background-color: #6a4b9b; /* بنفسجي فاتح مريح */
+      color: #fff;
     }
 
     header {
-      background-color: #222;
+      background-color: #4b2c82; /* هيدر بنفسجي غامق أخف */
       color: #fff;
       padding: 1rem 2rem;
       display: flex;
@@ -38,7 +38,7 @@
     .logo-icon {
       width: 30px;
       height: 30px;
-      background-color: #00bfa6;
+      background-color: #ff8c00; /* برتقالي */
       border-radius: 50%;
       margin-right: 10px;
     }
@@ -52,7 +52,7 @@
     }
 
     nav a:hover {
-      color: #00bfa6;
+      color: #ff8c00;
     }
 
     main {
@@ -63,8 +63,9 @@
 
     h1 {
       text-align: center;
-      color: #00bfa6;
+      color: #ff8c00; /* عنوان برتقالي */
       margin-bottom: 1rem;
+      font-weight: 700;
     }
 
     section.intro {
@@ -72,6 +73,8 @@
       line-height: 1.6;
       margin-bottom: 3rem;
       text-align: center;
+      font-weight: 300;
+      color: #eee; /* أبيض فاتح */
     }
 
     section.video-container {
@@ -84,7 +87,7 @@
       width: 100%;
       max-width: 700px;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     section.team-members {
@@ -93,8 +96,9 @@
 
     section.team-members h2 {
       text-align: center;
-      color: #00bfa6;
+      color: #ff8c00; /* عنوان برتقالي */
       margin-bottom: 2rem;
+      font-weight: 700;
     }
 
     .team-grid {
@@ -106,11 +110,19 @@
     }
 
     .team-member {
-      background: #fff;
+      background: #9575cd; /* بنفسجي فاتح */
       border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
       padding: 1rem;
       text-align: center;
+      color: #2e003e; /* بنفسجي غامق للنص */
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .team-member:hover {
+      background-color: #ff8c00; /* برتقالي عند الهور */
+      color: #2e003e; /* نص بنفسجي غامق */
+      cursor: pointer;
     }
 
     .team-member img {
@@ -119,25 +131,27 @@
       margin-bottom: 0.8rem;
       aspect-ratio: 1 / 1;
       object-fit: cover;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 
     .team-member h3 {
       margin: 0.3rem 0 0.6rem;
-      color: #222;
+      color: #2e003e;
+      font-weight: 700;
     }
 
     .team-member p {
       font-size: 0.9rem;
-      color: #555;
+      color: #4b2c82;
       margin: 0;
+      font-weight: 500;
     }
 
     footer {
-      background-color: #222;
-      color: #ccc;
+      background: linear-gradient(to right, #4b2c82, #7e57c2);
+      color: #fff;
       text-align: center;
-      padding: 1.5rem 2rem;
-      margin-top: 3rem;
+      padding: 2rem;
       font-size: 0.9rem;
       display: flex;
       flex-wrap: wrap;
@@ -147,7 +161,7 @@
     }
 
     footer .footer-nav a {
-      color: #ccc;
+      color: #fff;
       margin: 0 10px;
       text-decoration: none;
       font-weight: 500;
@@ -155,11 +169,11 @@
     }
 
     footer .footer-nav a:hover {
-      color: #00bfa6;
+      color: #ff8c00;
     }
 
     footer .social-icons a {
-      color: #ccc;
+      color: #fff;
       margin: 0 8px;
       font-size: 1.5rem;
       transition: color 0.3s ease;
@@ -167,7 +181,7 @@
     }
 
     footer .social-icons a:hover {
-      color: #00bfa6;
+      color: #ff8c00;
     }
 
     @media (max-width: 600px) {
@@ -229,7 +243,6 @@
     <section class="team-members">
       <h2>Team Members</h2>
       <div class="team-grid">
-        <!-- Example team member -->
         <div class="team-member">
           <img src="images/member1.jpg" alt="Team Member 1" />
           <h3>Mario Emad</h3>
@@ -240,7 +253,6 @@
           <h3>Marco</h3>
           <p>Creative Director</p>
         </div>
-        <!-- Add more members as needed -->
       </div>
     </section>
   </main>
@@ -259,22 +271,14 @@
         target="_blank"
         rel="noopener"
       >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-          alt="Facebook"
-          style="width:24px; height:24px;"
-        />
+        <i class="fab fa-facebook"></i>
       </a>
       <a
         href="https://www.instagram.com/triplevisionagency"
         target="_blank"
         rel="noopener"
       >
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-          alt="Instagram"
-          style="width:24px; height:24px;"
-        />
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
     <div>&copy; 2025 Triple Vision Marketing. All rights reserved.</div>

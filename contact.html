@@ -19,8 +19,8 @@
     body {
       margin: 0;
       font-family: 'Outfit', sans-serif;
-      background-color: #f8f9fa;
-      color: #222;
+      background-color: #2e0854; /* بنفسجي داكن */
+      color: #2e0854;
     }
     header {
       background-color: #222;
@@ -39,7 +39,7 @@
     .logo-icon {
       width: 30px;
       height: 30px;
-      background-color: #00bfa6;
+      background-color: #ffa500; /* برتقالي */
       border-radius: 50%;
       margin-right: 10px;
     }
@@ -51,32 +51,37 @@
       transition: color 0.3s ease;
     }
     nav a:hover {
-      color: #00bfa6;
+      color: #ffa500;
     }
 
     main {
       max-width: 900px;
       margin: 2rem auto 4rem;
-      padding: 0 1rem;
+      padding: 2rem 1rem;
+      background-color: #fff; /* خلفية بيضاء */
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(46, 8, 84, 0.3);
+      color: #2e0854; /* نص بنفسجي */
     }
 
     h1 {
       text-align: center;
-      color: #00bfa6;
+      color: #ffa500; /* برتقالي */
       margin-bottom: 2rem;
       font-weight: 700;
     }
 
     .contact-info {
-      background-color: #fff;
+      background-color: #f9f9f9; /* أبيض مائل للرمادي */
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(46, 8, 84, 0.15);
       margin-bottom: 2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 2rem;
       justify-content: space-between;
+      color: #2e0854;
     }
 
     .info-item {
@@ -86,42 +91,51 @@
 
     .info-item h3 {
       margin-bottom: 0.8rem;
-      color: #222;
+      color: #ffa500;
     }
 
     .info-item p {
       margin: 0.3rem 0;
-      color: #555;
+      color: #4a3c6e;
     }
 
     form {
-      background-color: #fff;
+      background-color: #f9f9f9; /* أبيض مائل للرمادي */
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(46, 8, 84, 0.15);
+      color: #2e0854;
     }
 
     form label {
       display: block;
       margin-bottom: 0.3rem;
       font-weight: 600;
-      color: #222;
+      color: #ffa500;
     }
 
-    form input, form textarea {
+    form input,
+    form textarea {
       width: 100%;
       padding: 0.7rem;
       margin-bottom: 1.2rem;
-      border: 1px solid #ccc;
+      border: 1px solid #cca43b; /* ظل برتقالي */
       border-radius: 6px;
       font-family: 'Outfit', sans-serif;
       font-size: 1rem;
       resize: vertical;
+      background-color: #fff;
+      color: #2e0854;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: #a3927d;
     }
 
     form button {
-      background-color: #00bfa6;
-      color: white;
+      background-color: #ffa500;
+      color: #2e0854;
       padding: 0.75rem 2rem;
       border: none;
       border-radius: 6px;
@@ -132,7 +146,8 @@
     }
 
     form button:hover {
-      background-color: #009d87;
+      background-color: #cc8400;
+      color: #fff;
     }
 
     .map-container {
@@ -150,8 +165,8 @@
     }
 
     footer {
-      background-color: #222;
-      color: #ccc;
+      background-color: #1c043a;
+      color: #d3c3a3;
       text-align: center;
       padding: 1.5rem 2rem;
       font-size: 0.9rem;
@@ -162,24 +177,24 @@
       gap: 10px;
     }
     footer .footer-nav a {
-      color: #ccc;
+      color: #d3c3a3;
       margin: 0 10px;
       text-decoration: none;
       font-weight: 500;
       transition: color 0.3s ease;
     }
     footer .footer-nav a:hover {
-      color: #00bfa6;
+      color: #ffa500;
     }
     footer .social-icons a {
-      color: #ccc;
+      color: #d3c3a3;
       margin: 0 8px;
       font-size: 1.4rem;
       transition: color 0.3s ease;
       text-decoration: none;
     }
     footer .social-icons a:hover {
-      color: #00bfa6;
+      color: #ffa500;
     }
     @media (max-width: 600px) {
       header {
@@ -224,7 +239,7 @@
     <div class="contact-info">
       <div class="info-item">
         <h3>Address</h3>
-        <p>5 Kamal Mahgoub StreetBehind Badr ParkIsmailia Bridge, Cairo, Egypt</p>
+        <p>5 Kamal Mahgoub Street Behind Badr Park Ismailia Bridge, Cairo, Egypt</p>
       </div>
       <div class="info-item">
         <h3>Phone</h3>
@@ -253,7 +268,6 @@
     </form>
 
     <div class="map-container">
-      <!-- ضع رابط خرائط جوجل الصحيح لموقع شركتك -->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.666661918233!2d31.235712815128934!3d30.04441978187742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458409c6b1b8eab%3A0x9e91c1d2e27e94f6!2sCairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1689412345678!5m2!1sen!2sus"
         allowfullscreen=""
@@ -265,4 +279,18 @@
 
   <footer>
     <div class="footer-nav">
-      <a href="index.html">Home
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="social-icons">
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
